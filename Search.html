@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>TechByte</title>
+  </head>
+
+  <body>
+    <!--header section-->
+
+    <header class="header">
+      <!--Navigation bar-->
+
+      <div class="navcont eclipse-bg text-light">
+        <nav class="nav flex align-1 py-2">
+          <div class="navlogo flex align-1">
+            <i class="fab fa-shopify cabaret-color fa-2x mr-3 n-logo"></i>
+            <a href="index.html" class="logo_a"><h3 class="lato text-light logo-heading">TechByte</h3></a>
+          </div>
+
+          <ul class="nav-list flex align-1 list-unstyled pt-1">
+            <li class="mr-2">
+              <a href="index.html" class="cabaret-color nav-link"
+                ><i class="fas fa-home mr-1"></i>Главная</a
+              >
+            </li>
+            <li class="mr-2">
+              <a href="Search.html" class="defgrey nav-link"
+                ><i class="fas fa-clipboard-list mr-1"></i>Товары</a
+              >
+            </li>
+            <li>
+              <a href="" class="defgrey nav-link d-none d-md-block"
+                ><i class="fas fa-shopping-cart mr-1"></i>Мои покупки</a
+              >
+            </li>
+          </ul>
+
+          <div class="user-items flex align-1">
+            <i class="fas fa-envelope-open-text mr-4 defgrey"></i>
+            <i class="fas fa-user-circle fa-2x text-white user"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--End of header-->
+
+    <!--start of display and search section-->
+
+    <section class="display flex align-2">
+      <h1 class="lato text-white d-head">TechByte</h1>
+      <h3 class="catamaran text-white mt-3 d-body">
+        лучшее соотношение цены и качества
+      </h3>
+      <div class="inputcont text-center mt-4">
+        <select class="select input-item" name="select">
+          <option value="Desktop">Компьютеры</option>
+          <option value="Laptops">Ноутбуки</option>
+          <option value="Smartphones">Смартфоны</option>
+          <option value="smartwatches">Умные чысы</option>
+          <option value="others">Другие товары</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Что вы ищете?"
+          class="lato input-item mt-2"
+        />
+        <input
+          type="text"
+          placeholder="Где?"
+          class="lato input-item mt-2 mb-4"
+        />
+        <a href="Search.html" class="searchbtn eclipse-bg text-white px-3 py-2"
+          >Искать</a
+        >
+      </div>
+    </section>
+
+    <!--end of display and search section-->
+
+    <!--start of search section-->
+
+    <section class="search-items mb-5">
+      <div class="row search-cont m-auto">
+        <div class="col-lg-4 option">
+          <h2 class="filters-title mt-4">Результаты поиска:</h2>
+          <div class="underline"></div>
+          <form action="filters" class="top-filter flex mt-4">
+            <div class="form-group mr-4 ml-5 form-1">
+              <input
+                class="check-spacing"
+                type="checkbox"
+                id="new"
+                name="new"
+                value="new"
+              />
+              <label class="check-spacing" for="new"> Новый</label><br />
+            </div>
+            <div class="form-group">
+              <input
+                class="check-spacing"
+                type="checkbox"
+                id="used"
+                name="used"
+                value="used"
+              />
+              <label class="check-spacing" for="used"> Б/У</label><br />
+            </div>
+          </form>
+
+          <h2 class="filters-title">Тип</h2>
+          <div class="underline"></div>
+          <form action="type" class="type-check check-spacing">
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="b-new" />
+              <label class="check-spacing" for="b-new"> Совершенно новый</label
+              ><br />
+            </div>
+
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="sec-hand" />
+              <label class="check-spacing" for="sec-hand"> Подержанный</label
+              ><br />
+            </div>
+
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="refub" />
+              <label class="check-spacing" for="refub"> Отремонтированный</label
+              ><br />
+            </div>
+          </form>
+
+          <h2 class="filters-title">Категории</h2>
+          <div class="underline"></div>
+          <form action="filters" class="inches-check check-spacing">
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="desktop" />
+              <label class="check-spacing" for="desktop">Компьютеры</label
+              ><br />
+            </div>
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="laptop" />
+              <label class="check-spacing" for="laptop">Ноутбуки</label><br />
+            </div>
+            <div class="form-group mr-2">
+              <input
+                class="check-spacing mr-3"
+                type="checkbox"
+                id="Smartphones"
+              />
+              <label class="check-spacing" for="Smartphones">Смартфоны</label
+              ><br />
+            </div>
+            <div class="form-group mr-2">
+              <input
+                class="check-spacing mr-3"
+                type="checkbox"
+                id="smartwatches"
+              />
+              <label class="check-spacing" for="smartwatches">Умные часы</label
+              ><br />
+            </div>
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="other" />
+              <label class="check-spacing" for="other">Другие товары</label
+              ><br />
+            </div>
+          </form>
+
+          <h2 class="filters-title">Ценовой диапазон</h2>
+          <div class="underline"></div>
+          <form action="filters" class="price-check check-spacing">
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="low" />
+              <label class="check-spacing" for="low">0₽-20000₽</label><br />
+            </div>
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="mid" />
+              <label class="check-spacing" for="mid">20000₽-40000₽ </label
+              ><br />
+            </div>
+            <div class="form-group mr-2">
+              <input class="check-spacing mr-3" type="checkbox" id="high" />
+              <label class="check-spacing" for="high">40000₽-80000₽</label
+              ><br />
+            </div>
+            <div class="form-group mr-2">
+              <input
+                class="check-spacing mr-3"
+                type="checkbox"
+                id="expensive"
+              />
+              <label class="check-spacing" for="expensive">80000₽++</label
+              ><br />
+            </div>
+          </form>
+
+          <button class="search-all py-2 cabaret-bg text-white">Поиск</button>
+        </div>
+
+        <!--display Products section-->
+
+        <div class="col-lg-8">
+          <h2 class="lato product-d mt-4">7 результатов по запросу</h2>
+
+          <hr />
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/desktop-3.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/desktop-1.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/desktop-2.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/desktop-4.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/laptop-1.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/laptop-2.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-card d-md-flex d-block mt-4 p-3">
+            <img src="images/laptop-3.jpeg" alt="img" class="large-img mr-4" />
+
+            <div class="card-text">
+              <div class="headicon flex align-1">
+                <h3 class="lato product-d-head">Название</h3>
+                <i class="fas fa-plus cabaret-color"></i>
+              </div>
+              <h4 class="lato product-d-tag cabaret-color">Новый</h4>
+              <p class="catamaran text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+              </p>
+              <h5 class="lato product-d-location cabaret-color">
+                Расположение : Красноярск, Россия
+              </h5>
+              <div class="bottom-item flex align-1">
+                <h4 class="lato product-d-tag"></h4>
+                <button class="bottom-btn cabaret-bg text-white">49999₽</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination-sec mt-4">
+            <ul class="pagination list-unstyled">
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">1</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">2</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">3</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">4</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">5</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">6</a>
+              </li>
+              <li class="mr-3 bg-info p-2">
+                <a href="#" class="text-white">7</a>
+              </li>
+              <li class="bg-info p-2">
+                <a href="" class="text-white">...</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- start of footer-->
+
+    <footer class="footer py-4">
+      <div class="footer-cont m-auto d-lg-flex d-md-block d-block">
+        <div class="footer-des full-flex">
+          <div class="d-flex">
+            <i class="fab fa-shopify cabaret-color fa-2x mr-3 n-logo"></i>
+            <h3 class="lato logo-heading">TechByte</h3>
+          </div>
+          <p class="text-justify catamaran mt-3">
+            TechByte - это специализированный интернет-магазин электроники.<br> Мы продаем все виды продукции электроники.<br> В этом магазине пользователь может найти бывшие в употреблении, новые и восстановленные товары.<br> Мы всегда стремимся предоставить лучший сервис в рамках бюджета.
+          </p>
+        </div>
+
+        <div class="catagories ml-5 lato">
+          <h3 class="ml-1 mb-3 category">Категории</h3>
+          <div class="underline"></div>
+          <div class="ul-cont d-flex justify-content-start">
+            <ul class="first-ul mr-3 lato list-unstyled">
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Компьютеры</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Ноутбуки</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Смартфоны</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Умные часы</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Часы</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Наушники</a>
+              </li>
+            </ul>
+
+            <ul class="second-ul lato list-unstyled">
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Компьютерные мыши</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Клавиатуры</a>
+              </li>
+              <li class="mb-2 mr-2">
+                <a href="#" class="cabaret-color foot-link">Аксессуары</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-nav full-flex ml-5 lato">
+          <h3 class="mb-3 navi">Навигация</h3>
+          <div class="underline"></div>
+          <ul class="third-ul lato list-unstyled">
+            <li class="mb-2 mr-2">
+              <a href="" class="cabaret-color foot-link">Главная</a>
+            </li>
+            <li class="mb-2 mr-2">
+              <a href="" class="cabaret-color foot-link">Поиск</a>
+            </li>
+            <li class="mb-2 mr-2">
+              <a href="" class="cabaret-color foot-link">Контакты</a>
+            </li>
+            <li class="mb-2 mr-2">
+              <a href="" class="cabaret-color foot-link">О нас</a>
+            </li>
+            <li class="mb-2 mr-2">
+              <a href="" class="cabaret-color foot-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-btns full-flex mt-5">
+          <div class="usa flex align-1">
+            <p class="mr-4">Страна</p>
+            <button class="transparent cabaret-color">Россия</button>
+          </div>
+
+          <div class="english flex mt-3 align-1">
+            <p class="mr-4">Язык</p>
+            <button class="transparent cabaret-color">Русский</button>
+          </div>
+
+          <div class="currency flex mt-3 align-1">
+            <p class="mr-4">Валюта</p>
+            <button class="transparent cabaret-color">Рубли</button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom flex align-1 m-auto">
+        <p>Copyright 2023 Все права защищены. TechByte.</p>
+
+      </div>
+    </footer>
+  </body>
+</html>
